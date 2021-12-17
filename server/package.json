@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "express server for bookStore app",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd.. && npm start --prefix client",
+    "start": "node src/index.js",
+    "client-install": "npm install --prefix Client",
+    "server": "nodemon src/index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": " NPM_CONFIG_PRODUCTION=false npm install && (cd Client && npm install && npm run build)"
+  },
+  "author": "Gurudas",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.12",
+    "nodemon": "^2.0.15"
+  }
+}
