@@ -1,6 +1,6 @@
 # BookStore
 
-##Live Project : https://bookstoreapp-v1.herokuapp.com/
+## Live Project : https://bookstoreapp-v1.herokuapp.com/
 
 ## Run project locally
 1. Install node module for subfolders client and server.
